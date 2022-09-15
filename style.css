@@ -1,0 +1,144 @@
+@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body{
+  font-family: 'Gilroy-Regular', sans-serif;
+  background: linear-gradient(90deg, #00B4DB 0%, #0083B0 100%);
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('assets/iiSikBa.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 2.5rem;
+}
+
+.card{
+  display: flex;
+  background: url('assets/sotUnu7.png') white no-repeat right;
+  background-size: contain;
+      max-width: 150vh;
+    width: 100%;
+  border-radius: 40px;
+  justify-content: space-between;
+}
+
+
+.card-left{
+  max-width: 250px;
+  margin: 4rem;
+  font-family: 'Gilroy-Bold', sans-serif;
+  margin-right:0;
+}
+
+.logo{
+  color: #465685;
+}
+
+.form-heading{
+  font-size: 1.5rem;
+  color: #414042;
+}
+
+/* .card-right img{
+  height: 100%;
+} */
+
+label{
+  display: block;
+  margin-top:1rem;
+  color: #414042;
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-size: 14px;
+}
+
+input{
+  margin-top: .5rem;
+  border-radius: 40px;
+  border: none;
+  box-shadow: 0 0 0 1pt #BCBEC0;
+  height: 2rem;
+  width:100%;
+  padding:1rem;
+  transition: .1s;
+}
+
+input:focus{
+  outline:none;
+  box-shadow: 0 0 2pt 2pt #888b8e;
+}
+
+.forget-password{
+  display:block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #465685;
+  font-size: 14px;
+}
+
+.sign-in-btn{
+  margin: 1.5rem 0;
+  display: block;
+  width: 100%;
+  background: #A93159;
+  border-radius: 40px;
+  padding:0.5rem;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.social-login{
+  text-align:center;
+  font-size: 12px;
+  color: #798995;
+}
+
+.social-login a{
+  color: #465685;
+  text-decoration: none;
+  
+}
+
+.social-btns{
+  margin: 0.5rem 0;
+  display:flex;
+  gap: 0.5rem;
+  
+}
+.social-btn{
+  padding: 0.4rem;
+  border: 1px solid #BCBEC0;
+  border-radius: 40px;
+  flex-grow:1;
+}
+
+.mobile-img{
+  width:100%;
+  background:white;
+  display: none;
+    }
+
+@media only screen and (max-width: 768px){
+  .card{
+    background:white;
+    overflow:hidden;
+  display:block;}
+  .card-left{
+    margin:auto;
+    margin-bottom:1rem;
+  margin-top:2rem;}
+  .mobile-img{
+    display: unset;
+  transform: translateY(10px);
+background-color: #e1eef5;}
+  }
